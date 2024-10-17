@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    color: #195362;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #2A9D8F; 
+    padding: 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #0288D1; 
+    background-color: #81D4FA; 
+    border-radius: 5px;
+}
+
+.navbar ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: #81D4FA; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Hero section*/
+ .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('img/fond.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+} 
+
+.hero-content {
+    background-color: rgb(178 178 178 / 30%);
+    padding: 2em;
+    border-radius: 10px;
+    height: 50%;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    word-spacing: 5px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    word-spacing: 5px;
+}
+
+.btn {
+    background-color: #0288D1;
+    color: white;
+    padding: 0.75em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background-color: #6e99f5;
+}
+
+
+
+/* Start Gallery */
+section h1{
+    color: #0288D1;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+section#collection {
+    padding: 40px;
+    text-align: center;
+    background-color: #E0F7FA;
+}
+
+#collection h2 {
+    color: #0288D1;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#collection p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 6px; 
+    line-height: 30px;
+
+}
+.art-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.art-item {
+    width: 280px;
+    background-color: rgb(178 178 178 / 30%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px; /* مسافة داخلية حول المحتوى */
+}
+
+.art-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* ظل للصورة */
+}
+
+.description {
+    margin: 15px 0;
+    font-size: 16px;
+    color: white; /* لون النص التعريفي */
+    text-align: center;
+}
+
+.item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* خط بسيط فوق الزر والثمن */
+}
+
+.add-to-cart {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e65c00;
+}
+
+.price {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/*about page(section)*/
+.s-hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('img/fond.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2em;
+}
+.main-section{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.section h3{
+    align-self: center;
+    color: #0288D1;
+}
+.paragraph{
+    background-color: rgb(178 178 178 / 30%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.paragraph div{
+    flex-basis: 300px;
+}
+.paragraph p{
+    color: #f4f4f4;
+    text-align: start;
+}
+.paragraph h4{
+    color: #0288D1;
+}
+/*contact page*/
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('img/fond.jpg');
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    color: white;
+    padding-left: 20px;
+}
+
+.contact-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 100%;
+}
+
+#contact label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #553232;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Footer */
+footer {
+    background-color:#2A9D8F ;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-left: 200px;
+
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.footer-section p {
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+@media (max-width: 430px){
+    .paragraph{
+        height: 100%;
+    }
+    .hero-content{
+        height: 100%;
+    } 
+}
+@media (min-width: 431px) and (max-width: 900px) {
+    .paragraph{
+        height: 100%;
+    }    
+    .hero-content{
+        height: 100%;
+    }
+}
