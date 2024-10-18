@@ -17,6 +17,7 @@ nav {
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -26,6 +27,7 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+    flex: 1;
 }
 
 .navbar ul li {
@@ -67,6 +69,7 @@ nav {
     color: white;
     font-size: 24px;
     font-weight: bold;
+    flex: 1;
 }
 
 
@@ -327,10 +330,9 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    padding-left: 200px;
-
 }
 
 .footer-section {
@@ -363,15 +365,35 @@ footer p {
     .paragraph{
         height: 100%;
     }
-    .hero-content{
+    .hero{
         height: 100%;
-    } 
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .footer-section{
+        flex-direction: column;
+    }
+    .navbar ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
 }
 @media (min-width: 431px) and (max-width: 900px) {
     .paragraph{
         height: 100%;
-    }    
-    .hero-content{
+    } 
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .hero{
         height: 100%;
     }
 }
